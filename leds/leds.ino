@@ -17,7 +17,7 @@ void loop() {
     char red = Serial.read();
     char green = Serial.read();
     char blue = Serial.read();
-    uint32_t color = strip.Color(green, red, blue);
+    uint32_t color = strip.Color(red, green, blue);
 
     for (int i = 0; i < LED_COUNT; i++) {
       strip.setPixelColor(i, color);
